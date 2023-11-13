@@ -18,9 +18,8 @@ public class Aims {
         user_01_cart.addDigitalVideoDisc(dvd_02);
         user_01_cart.addDigitalVideoDisc(dvd_03);
         user_01_cart.addDigitalVideoDisc(dvd_04);
-        // xoa dvd_01
-        user_01_cart.removeDigitalVideoDisc(dvd_01);
-        System.out.println("Total cost is : " + user_01_cart.totalCost() + "$");
+        //System.out.println("Total cost is : " + user_01_cart.totalCost() + "$");
+        user_01_cart.print();
 
 	}
 

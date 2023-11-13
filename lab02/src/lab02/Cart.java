@@ -47,4 +47,40 @@ public class Cart {
         }
         return total;
     }
+//20215111
+    public void print() {
+		System.out.println("***********************CART***********************");
+		System.out.println("Ordered Items: ");
+		for (int i=0;i<qtyOrdered;i++) {
+			System.out.println(itemsOrdered[i].toString());
+		}
+		System.out.println("Total cost: " + this.totalCost());
+		System.out.println("***************************************************");
+	}
+	public void search(int id) {
+		int count=0;
+		for (int i=0;i<qtyOrdered;i++) {
+			if (itemsOrdered[i].isMatch(id)){
+				System.out.println(itemsOrdered[i].toString());
+				count+=1;
+			}
+		}
+		if (count==0) {
+			System.out.println("No match is found");
+		}
+	}
+	public void search(String title) {
+		int count=0;
+		for (int i=0;i<qtyOrdered;i++) {
+			if (itemsOrdered[i].isMatch(title)){
+				System.out.println(itemsOrdered[i].toString());
+				count+=1;
+			}
+		}
+		if (count==0) {
+			System.out.println("No match is found");
+		}
+	}
+    
+    
 }
