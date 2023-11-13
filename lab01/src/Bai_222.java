@@ -1,8 +1,0 @@
-import javax.swing.JOptionPane;
-public class Bai_222 {
-    public static void main(String[] args) {
-                JOptionPane.showMessageDialog(null, "Do Van Phong-5111-Hello world! How are you ?");
-                System.exit(0);
-    }
-
-}
